@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+</html>
+
+
+<script>
+
+/*
+
+function myevent(dom, eventName, cb) {
+	if (dom.addEventListener)
+	{
+		dom.addEventLisener(eventName, cb, false)
+	}
+	else if (dom.attachEvent)
+	{
+		dom.attachEvent("on" + eventName, cb)
+	}
+}
+*/
+
+
+
+// JSON 格式
+// var a = {}
+
+//console.log (a instanceof Array)
+
+//  JSON 是系统提供的JSON对象
+//console.log (a instanceof JSON)
+
+
+/*
+var arr = [6,4,3,1,2]
+
+for (var i = 0; i < arr.length-1; i++)
+{
+	for (var j = 0; j < arr.length-i-1; j++)
+	{
+		if (arr[j] > arr[j+1])
+		{
+			var t = arr[j]
+			arr[j] = arr[j+1]
+			arr[j+1] = t
+		}
+	}
+}
+
+
+var str = "abc"
+
+str.length
+*/
+/*
+var a = [1,2,3,2,2,2,2]
+
+var b = []
+
+// 判断 data 是否在 array 中
+function isInArray(data, arr) {
+	var flag = false
+	for (var i = 0; i < arr.length; i++ )
+	{
+		if (arr[i] == data)
+		{
+			flag = true;
+			break;
+		}
+	}
+	return flag
+}
+
+for (var i = 0; i < a.length; i++)
+{
+	if ( !isInArray(a[i], b)  )
+	{
+		b.push( a[i] )
+	}
+}
+a = b
+
+
+
+*/
+
+
+
+
+
+
+
+/*
+for (var i = 0; i < a.length; i++)
+{
+	var b = a[i]
+	for (var j = 1; j < a.length; j++)
+	{
+		if (b == a[j])
+		{
+			// a[j+1] = a[j]
+			//a.shift()
+			//a.pop()
+			//a.splice
+			a.slice(j, 1)
+		}
+	}
+}
+*/
+/*
+// a: 4, b:3,  c:4
+var str = "aaaabbbcccc"
+
+var obj = {}
+
+for (var i = 0; i < str.length; i++)
+{
+	var c = str[i]   // 当前字符
+
+	// "a"  obj["a"]  ==> obj.a
+	if (obj[c] == undefined)
+	{
+		obj[c] = 0
+	}
+
+	obj[c]++
+}
+
+console.log( obj )
+*/
+
+/*
+var str = "     abc      "
+
+var b = ""
+
+// 先找出非空字符串的开始位置
+var start = 0
+for (var i = 0; i < str.length; i++)
+{
+	if (str[i] != " ")
+	{
+		start = i
+		break;
+	}
+}
+// 先找出非空字符串的结束位置
+var end = 0
+for (var i = str.length-1; i >= 0; i--)
+{
+	if (str[i] != " ") {
+		end = i;
+		break;
+	}
+}
+
+var b = str.substring(start, end)
+*/
+
+
+function aaa(n) {
+	
+	var arr = []
+
+	while( 1 ) {
+		var a = parseInt(Math.random() * 32)
+
+		if ( !isInArray(a, arr) )  // 如果a不在数组arr中
+		{
+			arr.push(a)
+			if (arr.length == n)
+			{
+				break;
+			}
+		}
+	}
+
+	return arr
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+position: absolute:
+left: 50%
+margin-left: -自身宽度的一半
+
+position: absolute:
+left: 50%
+transform: translateX(-50%)
+
+
+margin: 0 auto;
+width: 元素宽度
+display: block
+
+
+display: flex;
+justify-content: center;
+align-item: center;
